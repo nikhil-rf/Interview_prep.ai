@@ -10,11 +10,19 @@ html,
 body,
 #root {
     width: 100%;
-    background-color: #161616;
+    background-color: #0b0d13;
     color: whitesmoke;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: background-color 0.3s ease;
 }
 
-.highlight{
+html[data-theme="light"],
+html[data-theme="light"] body,
+html[data-theme="light"] #root {
+    background-color: #f8fafc;
+    color: #090d16;
+}
+
+.highlight {
     color: #d20d3b;
 }
